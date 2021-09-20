@@ -7,6 +7,7 @@
 </head>
 <body>
 <header>
+   <block name="header"><include src="./partial/header.html"></include></block>
     <nav class="menu" role='navigation'>
         <ol>
             <li class="menu-item"><a href="#0">Inicio</a></li>
@@ -34,10 +35,13 @@
     </nav>
 </header>
 <section>
+    <block name="content"><include src="./partial/content.html"></include></block>
 </section>
 <aside>
+    <block name="aside"><include src="./partial/aside.html"></include></block>
 </aside>
 <footer>
+    <block name="footer"><include src="./partial/footer.html"></include></block>
 </footer>
 </body>
 </html>
