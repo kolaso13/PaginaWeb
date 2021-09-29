@@ -1,0 +1,25 @@
+@import "mixins/main"
+
+header
+  @include background(#833ab4, #fd1d1d, #fcb045)
+  height: calc(25% - 2rem)
+  width: calc(100% - 2rem)
+  margin: 1rem
+
+section
+  background-color: bisque
+  height: 60%
+  width: calc(80% - 2rem)
+  margin: 0 1rem
+
+aside
+  background-color: cornflowerblue
+  height: 60%
+  width: calc(20% - 1rem)
+
+footer
+  @include background(#fcb045, #fd1d1d, #833ab4)
+  height: calc(15% - 2rem)
+  width: calc(100% - 2rem)
+  margin: 1rem
+
