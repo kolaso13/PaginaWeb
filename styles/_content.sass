@@ -1,37 +1,30 @@
 //https://codepen.io/typo3-freelancer/pen/poEvyGj
-@import "mixins/_main"
+$spacing: 1rem
 
-$spacing: 2rem
+header, header .navbar, header .navbar .container-fluid, main, aside, footer
+  border-radius: $spacing / 2
 
-header, section, aside, footer, .navbar
-  border-radius: $spacing/2
-
-.navbar
-  width: 100%
 header
-  @include background(#09ED63FF, #29B3DFFF, #FF00B1FF)
   display: flex
-  height: calc(25% - #{$spacing})
+  height: calc(7.75% - #{$spacing})
+  margin: $spacing / 2
   width: calc(100% - #{$spacing})
-  margin: 1rem
-  font:
-    family: Arial
-    size: large
-    style: normal
+  z-index: 1
+  @import 'menu'
 
-section
+main
   background-color: bisque
-  height: 60%
-  width: calc(80% - 2rem)
-  margin: 0 1rem
+  height: 88.5%
+  margin: 0 $spacing / 2
+  overflow-y: auto
+  width: calc(80% - #{$spacing})
 
 aside
   background-color: cornflowerblue
-  height: 60%
-  width: calc(20% - 1rem)
+  height: 88.5%
+  width: calc(20% - #{$spacing} / 2)
 
 footer
-  @include background(#09ED63FF, #29B3DFFF, #b64f97)
-  height: calc(15% - #{$spacing})
+  height: calc(3.75% - #{$spacing})
+  margin: $spacing / 2
   width: calc(100% - #{$spacing})
-  margin: 1rem
