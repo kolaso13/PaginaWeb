@@ -1,10 +1,23 @@
-@import "mixins/main"
+//https://codepen.io/typo3-freelancer/pen/poEvyGj
+@import "mixins/_main"
 
+$spacing: 2rem
+
+header, section, aside, footer, .navbar
+  border-radius: $spacing/2
+
+.navbar
+  width: 100%
 header
-  @include background(#833ab4, #fd1d1d, #fcb045)
-  height: calc(25% - 2rem)
-  width: calc(100% - 2rem)
+  @include background(#09ED63FF, #29B3DFFF, #FF00B1FF)
+  display: flex
+  height: calc(25% - #{$spacing})
+  width: calc(100% - #{$spacing})
   margin: 1rem
+  font:
+    family: Arial
+    size: large
+    style: normal
 
 section
   background-color: bisque
@@ -18,8 +31,7 @@ aside
   width: calc(20% - 1rem)
 
 footer
-  @include background(#fcb045, #fd1d1d, #833ab4)
-  height: calc(15% - 2rem)
-  width: calc(100% - 2rem)
+  @include background(#09ED63FF, #29B3DFFF, #b64f97)
+  height: calc(15% - #{$spacing})
+  width: calc(100% - #{$spacing})
   margin: 1rem
-
